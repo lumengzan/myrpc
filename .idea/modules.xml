@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/myrpc.iml" filepath="$PROJECT_DIR$/myrpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myrpc-demo/myrpc-demo.iml" filepath="$PROJECT_DIR$/myrpc-demo/myrpc-demo.iml" />
     </modules>
   </component>
 </project>
