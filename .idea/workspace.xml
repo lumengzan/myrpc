@@ -4,57 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6c414c2-d16f-4dea-875b-f85ead93850e" name="变更" comment="初始化">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_haproxy_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_memcache_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_mqtt_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_redis_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_smtp_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_stomp_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_xml_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_ssl_ocsp_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_classes_macos_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_native_macos_osx_aarch_64_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_native_macos_osx_x86_64_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_epoll_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_kqueue_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_aarch_64_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_kqueue_osx_aarch_64_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_kqueue_osx_x86_64_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_rxtx_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_sctp_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_udt_4_1_89_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-demo/src/main/java/com/lmz/netty/AppClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-demo/src/main/java/com/lmz/netty/AppServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-demo/src/main/java/com/lmz/netty/MyChannelHandler1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-demo/src/main/java/com/lmz/netty/MyChannelHandler2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-demo/src/test/java/com/lmz/NettyTest.java" afterDir="false" />
+    <list default="true" id="d6c414c2-d16f-4dea-875b-f85ead93850e" name="变更" comment="搭建基础架子">
+      <change afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-api/myrpc-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-api/src/main/java/com/lmz/HelloMyRPC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-client-demo/myrpc-client-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-client-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-provider-demo/myrpc-provider-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-provider-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-provider-demo/src/main/java/com/lmz/impl/HelloMyRPCImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/myrpc-common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/myrpc-core.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-framework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-framework/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-manager/myrpc-manager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-manager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/myrpc-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/src/main/java/com/lmz/netty/AppClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/src/main/java/com/lmz/netty/AppServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/src/main/java/com/lmz/netty/MyChannelHandler1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/src/main/java/com/lmz/netty/MyChannelHandler2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/src/test/java/com/lmz/NettyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/target/classes/com/lmz/netty/AppClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/target/classes/com/lmz/netty/AppClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/target/classes/com/lmz/netty/AppServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/target/classes/com/lmz/netty/AppServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/target/classes/com/lmz/netty/MyChannelHandler1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/target/classes/com/lmz/netty/MyChannelHandler2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/target/test-classes/com/lmz/NettyTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/myrpc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +52,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -139,6 +128,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -147,7 +137,7 @@
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="corretto-17" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/myrpc-demo/myrpc-provider-demo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -159,13 +149,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.lmz" />
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.lmz.netty" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.AppClient">
+  <component name="RunManager" selected="JUnit.ZookeeperTest.testCreatePNode">
     <configuration name="AppClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lmz.netty.AppClient" />
       <module name="myrpc-demo" />
@@ -211,6 +202,22 @@
       <framework value="gotest" />
       <method v="2" />
     </configuration>
+    <configuration name="ZookeeperTest.testCreatePNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myrpc-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lmz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lmz" />
+      <option name="MAIN_CLASS_NAME" value="com.lmz.ZookeeperTest" />
+      <option name="METHOD_NAME" value="testCreatePNode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -224,6 +231,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ZookeeperTest.testCreatePNode" />
         <item itemvalue="应用程序.AppClient" />
         <item itemvalue="应用程序.AppServer" />
       </list>
@@ -243,6 +251,9 @@
       <workItem from="1719883047756" duration="111000" />
       <workItem from="1719883172397" duration="9000" />
       <workItem from="1719921389939" duration="5555000" />
+      <workItem from="1719976828548" duration="3957000" />
+      <workItem from="1720865865667" duration="341000" />
+      <workItem from="1720945883790" duration="3017000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1719882920713</created>
@@ -251,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1719882920713</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="学习netty内容">
+      <created>1719976892519</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719976892519</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +288,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化" />
+    <MESSAGE value="学习netty内容" />
+    <MESSAGE value="搭建基础架子" />
+    <option name="LAST_COMMIT_MESSAGE" value="搭建基础架子" />
   </component>
 </project>

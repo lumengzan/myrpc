@@ -4,7 +4,15 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/myrpc-framework/pom.xml" />
+        <option value="$PROJECT_DIR$/myrpc-framework/myrpc-common/pom.xml" />
+        <option value="$PROJECT_DIR$/myrpc-framework/myrpc-core/pom.xml" />
+        <option value="$PROJECT_DIR$/myrpc-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/myrpc-demo/myrpc-client-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/myrpc-demo/myrpc-server-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/myrpc-demo/myrpc-api/pom.xml" />
         <option value="$PROJECT_DIR$/myrpc-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/myrpc-demo/myrpc-provider-demo/pom.xml" />
       </list>
     </option>
   </component>

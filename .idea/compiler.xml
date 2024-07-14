@@ -7,11 +7,25 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="myrpc-demo" />
+        <module name="myrpc-framework" />
+        <module name="myrpc-common" />
+        <module name="myrpc-core" />
+        <module name="myrpc-manager" />
+        <module name="myrpc-client-demo" />
+        <module name="myrpc-provider-demo" />
+        <module name="myrpc-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="myrpc" target="17" />
+      <module name="myrpc-api" target="17" />
+      <module name="myrpc-client-demo" target="17" />
+      <module name="myrpc-common" target="17" />
+      <module name="myrpc-core" target="17" />
       <module name="myrpc-demo" target="17" />
+      <module name="myrpc-framework" target="17" />
+      <module name="myrpc-manager" target="17" />
+      <module name="myrpc-provider-demo" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
