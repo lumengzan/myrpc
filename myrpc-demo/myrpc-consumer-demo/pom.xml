@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>myrpc-client-demo</artifactId>
+    <artifactId>myrpc-consumer-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>myrpc-client-demo</name>
+    <name>myrpc-consumer-demo</name>
     <parent>
         <artifactId>myrpc</artifactId>
         <groupId>com.lmz</groupId>
@@ -17,6 +17,11 @@
         <dependency>
             <groupId>com.lmz</groupId>
             <artifactId>myrpc-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.lmz</groupId>
+            <artifactId>myrpc-core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

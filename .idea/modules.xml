@@ -4,8 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/myrpc.iml" filepath="$PROJECT_DIR$/myrpc.iml" />
       <module fileurl="file://$PROJECT_DIR$/myrpc-demo/myrpc-api/myrpc-api.iml" filepath="$PROJECT_DIR$/myrpc-demo/myrpc-api/myrpc-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/myrpc-demo/myrpc-client-demo/myrpc-client-demo.iml" filepath="$PROJECT_DIR$/myrpc-demo/myrpc-client-demo/myrpc-client-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/myrpc-framework/myrpc-common/myrpc-common.iml" filepath="$PROJECT_DIR$/myrpc-framework/myrpc-common/myrpc-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myrpc-demo/myrpc-consumer-demo/myrpc-consumer-demo.iml" filepath="$PROJECT_DIR$/myrpc-demo/myrpc-consumer-demo/myrpc-consumer-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/myrpc-framework/myrpc-core/myrpc-core.iml" filepath="$PROJECT_DIR$/myrpc-framework/myrpc-core/myrpc-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/myrpc-demo/myrpc-demo.iml" filepath="$PROJECT_DIR$/myrpc-demo/myrpc-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/myrpc-framework/myrpc-framework.iml" filepath="$PROJECT_DIR$/myrpc-framework/myrpc-framework.iml" />

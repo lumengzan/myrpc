@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -11,16 +12,16 @@
         <module name="myrpc-common" />
         <module name="myrpc-core" />
         <module name="myrpc-manager" />
-        <module name="myrpc-client-demo" />
         <module name="myrpc-provider-demo" />
+        <module name="myrpc-consumer-demo" />
         <module name="myrpc-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="myrpc" target="17" />
       <module name="myrpc-api" target="17" />
-      <module name="myrpc-client-demo" target="17" />
       <module name="myrpc-common" target="17" />
+      <module name="myrpc-consumer-demo" target="17" />
       <module name="myrpc-core" target="17" />
       <module name="myrpc-demo" target="17" />
       <module name="myrpc-framework" target="17" />

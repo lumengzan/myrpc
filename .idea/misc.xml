@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/myrpc-demo/myrpc-api/pom.xml" />
         <option value="$PROJECT_DIR$/myrpc-demo/pom.xml" />
         <option value="$PROJECT_DIR$/myrpc-demo/myrpc-provider-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/myrpc-demo/myrpc-consumer-demo/pom.xml" />
       </list>
     </option>
   </component>

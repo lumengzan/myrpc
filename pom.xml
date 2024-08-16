@@ -16,7 +16,7 @@
         <module>myrpc-framework/myrpc-core</module>
         <module>myrpc-demo</module>
         <module>myrpc-demo/myrpc-api</module>
-        <module>myrpc-demo/myrpc-client-demo</module>
+        <module>myrpc-demo/myrpc-consumer-demo</module>
         <module>myrpc-demo/myrpc-provider-demo</module>
     </modules>
 
