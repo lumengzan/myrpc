@@ -5,43 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6c414c2-d16f-4dea-875b-f85ead93850e" name="变更" comment="搭建基础架子">
-      <change afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-consumer-demo/src/main/java/com/lmz/ConsumerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-provider-demo/src/main/java/com/lmz/ProviderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-provider-demo/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/src/main/java/com/lmz/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/src/main/java/com/lmz/exception/NetworkException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/src/main/java/com/lmz/exception/RegistryCenterException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/src/main/java/com/lmz/exception/ZookeeperException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/src/main/java/com/lmz/utils/NetUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/src/main/java/com/lmz/utils/zookeeper/ZookeeperNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/src/main/java/com/lmz/utils/zookeeper/ZookeeperUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/src/main/java/com/lmz/MyRPCBootstrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/src/main/java/com/lmz/ProtocolConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/src/main/java/com/lmz/ReferenceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/src/main/java/com/lmz/ServiceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/src/main/java/com/lmz/discovery/AbstractRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/src/main/java/com/lmz/discovery/Registry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/src/main/java/com/lmz/discovery/RegistryConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/src/main/java/com/lmz/discovery/impl/ZookeeperRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-manager/src/main/java/com/lmz/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myrpc-manager/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/src/main/java/com/lmz/NettyBootstrapInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/src/main/java/com/lmz/proxy/handler/RpcConsumerInvocationHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myrpc-demo/myrpc-client-demo/myrpc-client-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-consumer-demo/myrpc-consumer-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myrpc-demo/myrpc-client-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-consumer-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myrpc-demo/myrpc-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myrpc-demo/myrpc-provider-demo/myrpc-provider-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-provider-demo/myrpc-provider-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myrpc-demo/myrpc-provider-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-provider-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-common/myrpc-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/myrpc-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-core/myrpc-core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/myrpc-core.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myrpc-manager/myrpc-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-manager/myrpc-manager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myrpc-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-manager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/myrpc-consumer-demo/src/main/java/com/lmz/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-consumer-demo/src/main/java/com/lmz/ConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-demo/myrpc-consumer-demo/target/classes/com/lmz/ConsumerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-demo/myrpc-consumer-demo/target/classes/com/lmz/ConsumerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-common/src/main/java/com/lmz/exception/NetworkException.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/src/main/java/com/lmz/exception/NetworkException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-common/src/main/java/com/lmz/exception/RegistryCenterException.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/src/main/java/com/lmz/exception/RegistryCenterException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-common/src/main/java/com/lmz/utils/NetUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/src/main/java/com/lmz/utils/NetUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-common/src/main/java/com/lmz/utils/zookeeper/ZookeeperUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/src/main/java/com/lmz/utils/zookeeper/ZookeeperUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-common/target/classes/com/lmz/exception/NetworkException.class" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/target/classes/com/lmz/exception/NetworkException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-common/target/classes/com/lmz/utils/NetUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/target/classes/com/lmz/utils/NetUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-common/target/classes/com/lmz/utils/zookeeper/ZookeeperUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-common/target/classes/com/lmz/utils/zookeeper/ZookeeperUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-core/src/main/java/com/lmz/MyRPCBootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/src/main/java/com/lmz/MyRPCBootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-core/src/main/java/com/lmz/ReferenceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/src/main/java/com/lmz/ReferenceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-core/target/classes/com/lmz/MyRPCBootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/target/classes/com/lmz/MyRPCBootstrap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-core/target/classes/com/lmz/ReferenceConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/target/classes/com/lmz/ReferenceConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myrpc-framework/myrpc-core/target/classes/com/lmz/ReferenceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/myrpc-framework/myrpc-core/target/classes/com/lmz/ReferenceConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,12 +154,25 @@
     </key>
   </component>
   <component name="RunManager" selected="应用程序.ConsumerApplication">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lmz.Application" />
-      <module name="myrpc-manager" />
+    <configuration name="AppClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lmz.netty.AppClient" />
+      <module name="myrpc-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lmz.discovery.*" />
+          <option name="PATTERN" value="com.lmz.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lmz.netty.AppServer" />
+      <module name="myrpc-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lmz.netty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -213,38 +206,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NetUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lmz.utils.NetUtil" />
-      <module name="myrpc-common" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lmz.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NetUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lmz.utils.NetUtils" />
-      <module name="myrpc-common" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lmz.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProviderApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lmz.ProviderApplication" />
       <module name="myrpc-provider-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lmz.discovery.*" />
+          <option name="PATTERN" value="com.lmz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -275,7 +242,7 @@
       <module name="myrpc-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lmz.discovery.*" />
+          <option name="PATTERN" value="com.lmz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -302,9 +269,9 @@
       <list>
         <item itemvalue="应用程序.ConsumerApplication" />
         <item itemvalue="应用程序.ProviderApplication" />
-        <item itemvalue="应用程序.NetUtil" />
-        <item itemvalue="应用程序.NetUtils" />
-        <item itemvalue="应用程序.Application (1)" />
+        <item itemvalue="应用程序.AppServer" />
+        <item itemvalue="应用程序.AppClient" />
+        <item itemvalue="JUnit.ZookeeperTest.testCreatePNode" />
       </list>
     </recent_temporary>
   </component>
@@ -330,6 +297,9 @@
       <workItem from="1721473527891" duration="1208000" />
       <workItem from="1723467769922" duration="9989000" />
       <workItem from="1723554534305" duration="7159000" />
+      <workItem from="1723950390543" duration="3149000" />
+      <workItem from="1724070755542" duration="9616000" />
+      <workItem from="1724244751064" duration="4780000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1719882920713</created>
@@ -383,16 +353,5 @@
     <MESSAGE value="学习netty内容" />
     <MESSAGE value="搭建基础架子" />
     <option name="LAST_COMMIT_MESSAGE" value="搭建基础架子" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/myrpc-framework/myrpc-core/src/main/java/com/lmz/discovery/impl/ZookeeperRegistry.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

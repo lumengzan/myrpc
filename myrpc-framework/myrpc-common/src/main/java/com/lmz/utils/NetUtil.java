@@ -50,7 +50,6 @@ public class NetUtil {
 
     public static void main(String[] args) {
         String ip = NetUtil.getIp();
-        System.out.println(ip);
     }
 
 }

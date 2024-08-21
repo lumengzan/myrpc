@@ -6,4 +6,11 @@ package com.lmz.exception;
  * @date 2024/8/12
  */
 public class NetworkException extends RuntimeException{
+    public NetworkException() {
+        super();
+    }
+
+    public NetworkException(String message) {
+        super(message);
+    }
 }

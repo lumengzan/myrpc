@@ -12,4 +12,8 @@ public class RegistryCenterException extends RuntimeException{
     public RegistryCenterException(String message) {
         super(message);
     }
+
+    public RegistryCenterException(Exception e) {
+        super(e);
+    }
 }

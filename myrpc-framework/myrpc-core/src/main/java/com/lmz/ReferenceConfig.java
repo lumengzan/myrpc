@@ -1,13 +1,19 @@
 package com.lmz;
 
 import com.lmz.discovery.Registry;
-import com.lmz.discovery.RegistryConfig;
+import com.lmz.exception.NetworkException;
+import com.lmz.proxy.handler.RpcConsumerInvocationHandler;
+import io.netty.buffer.Unpooled;
+import io.netty.channel.Channel;
+import io.netty.channel.ChannelFutureListener;
 import lombok.extern.slf4j.Slf4j;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.net.InetSocketAddress;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author 老疯狗
@@ -30,23 +36,12 @@ public class ReferenceConfig<T> {
 
     public T get() {
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-        Class[] classes = {interfaceRef};
-        Object helloProxy = Proxy.newProxyInstance(classLoader, classes, new InvocationHandler() {
-            @Override
-            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        Class[] classes = new Class[]{interfaceRef};
 
-
-                InetSocketAddress address = registry.lookup(interfaceRef.getName());
-
-                if (log.isDebugEnabled()) {
-                    log.debug("服务调用方发现了服务【{}】的可用主机的【{}】", interfaceRef.getName(), address.getAddress() + ":" + address.getPort());
-                }
-
-                System.out.println("hello proxy");
-                return null;
-            }
-        });
+        RpcConsumerInvocationHandler handler = new RpcConsumerInvocationHandler(registry, interfaceRef);
+        Object helloProxy = Proxy.newProxyInstance(classLoader, classes, handler);
         return (T) helloProxy;
+
     }
 
 

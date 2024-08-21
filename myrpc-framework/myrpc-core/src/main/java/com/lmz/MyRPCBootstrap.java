@@ -3,11 +3,21 @@ package com.lmz;
 import com.lmz.discovery.Registry;
 import com.lmz.discovery.RegistryConfig;
 import com.lmz.exception.ZookeeperException;
+import io.netty.bootstrap.ServerBootstrap;
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
+import io.netty.channel.*;
+import io.netty.channel.nio.NioEventLoopGroup;
+import io.netty.channel.socket.SocketChannel;
+import io.netty.channel.socket.nio.NioServerSocketChannel;
 import lombok.extern.slf4j.Slf4j;
 
+import java.net.InetSocketAddress;
+import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -25,12 +35,15 @@ public class MyRPCBootstrap {
 
     private ProtocolConfig protocolConfig;
 
-    private int port = 8080;
+    private int port = 8088;
 
     private Registry registry;
 
-    private static final Map<String,ServiceConfig<?>> SERVICE_LIST=new ConcurrentHashMap<>(16);
+    public final static Map<InetSocketAddress, Channel> CHANNEL_CACHE = new ConcurrentHashMap<>();
 
+    private static final Map<String, ServiceConfig<?>> SERVICE_LIST = new ConcurrentHashMap<>(16);
+
+    public static final Map<Long, CompletableFuture<Object>> PENDING_REQUEST = new ConcurrentHashMap<>();
 
     private MyRPCBootstrap() {
     }
@@ -56,7 +69,7 @@ public class MyRPCBootstrap {
      */
     public MyRPCBootstrap registry(RegistryConfig registryConfig) throws ZookeeperException {
 
-        this.registry=registryConfig.getRegistry();
+        this.registry = registryConfig.getRegistry();
         return this;
     }
 
@@ -81,7 +94,7 @@ public class MyRPCBootstrap {
     public MyRPCBootstrap publish(ServiceConfig<?> service) {
 
         registry.register(service);
-        SERVICE_LIST.put(service.getInterfaceProvider().getName(),service);
+        SERVICE_LIST.put(service.getInterfaceProvider().getName(), service);
         return this;
     }
 
@@ -98,11 +111,40 @@ public class MyRPCBootstrap {
      * 启动服务
      */
     public void start() {
+        NioEventLoopGroup boss = new NioEventLoopGroup(2);
+        NioEventLoopGroup worker = new NioEventLoopGroup(10);
         try {
-            Thread.sleep(100000);
-        } catch (InterruptedException e) {
+        ServerBootstrap serverBootstrap = new ServerBootstrap();
+        serverBootstrap = serverBootstrap.group(boss, worker)
+                .channel(NioServerSocketChannel.class)
+                .childHandler(new ChannelInitializer<SocketChannel>() {
+                    @Override
+                    protected void initChannel(SocketChannel socketChannel) throws Exception {
+                        socketChannel.pipeline().addLast(new SimpleChannelInboundHandler<>() {
+                            @Override
+                            protected void channelRead0(ChannelHandlerContext channelHandlerContext, Object msg) throws Exception {
+                                ByteBuf byteBuf = (ByteBuf) msg;
+                                log.info("byteBuf->{}", byteBuf.toString(Charset.defaultCharset()));
+                                channelHandlerContext.channel().writeAndFlush(Unpooled.copiedBuffer("myrpc--hello".getBytes()));
+                            }
+                        });
+                    }
+                });
+        ChannelFuture channelFuture = serverBootstrap.bind(port).sync();
+
+        // channelFuture.channel().closeFuture().sync();
+        }
+        catch (InterruptedException e) {
             e.printStackTrace();
         }
+        // finally {
+        //     try {
+        //         boss.shutdownGracefully().sync();
+        //         worker.shutdownGracefully().sync();
+        //     } catch (InterruptedException e) {
+        //         e.printStackTrace();
+        //     }
+        // }
     }
 
     public MyRPCBootstrap reference(ReferenceConfig<?> reference) {
